@@ -18,10 +18,10 @@ button = driver.find_element(By.ID,"submit")
 button.click()
 
 conn = pymysql.connect(
-    host="database-1.cm9w6oi4ek28.us-east-1.rds.amazonaws.com",
+    host="<Your AWS sql Host>",
     user="admin",
-    password="mianarshan123",
-    database="test_db_1"
+    password="<PASSWORD>",
+    database="<DATABASE_NAME>"
 )
 time.sleep(5)
 courser = conn.cursor()
